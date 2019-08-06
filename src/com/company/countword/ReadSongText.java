@@ -21,9 +21,9 @@ public class ReadSongText {
             {
                 song.add(str);
             }
-        } catch (IOException ex)
+        } catch (IOException e)
         {
-            System.out.println(ex.getMessage());
+            System.out.println(e.getMessage());
         }
         return song;}
 }
