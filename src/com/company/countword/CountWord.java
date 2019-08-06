@@ -46,7 +46,7 @@ import java.util.*;
             {
                 for (int j = 0; j < longWords.size(); j++)
                 {
-                    if (BadWord.badWords.get(i).equalsIgnoreCase(longWords.get(j)))
+                    if (BadWord.badWords.get(i).equals(longWords.get(j)))
                     {
                         longWords.remove(BadWord.badWords.get(i));
                     }
