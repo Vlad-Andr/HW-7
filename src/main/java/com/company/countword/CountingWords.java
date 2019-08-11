@@ -35,13 +35,13 @@ public class CountingWords {
 
     public void goodWords()
     {
-        for (int i = 0; i < BadWord.badWords.size(); i++)
+        for ( String bads : BadWord.badWords)
         {
-            for (int j = 0; j < longWords.size(); j++)
+            for ( String longs : longWords)
             {
-                if (BadWord.badWords.get(i).equals(longWords.get(j)))
+                if (bads.equals(longs))
                 {
-                    longWords.remove(BadWord.badWords.get(i));
+                    longWords.remove(bads);
                 }
             }
         }
