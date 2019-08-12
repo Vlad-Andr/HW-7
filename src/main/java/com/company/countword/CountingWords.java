@@ -21,11 +21,11 @@ public class CountingWords {
         for (String words : readText.read()) {
             List<String> wordlist = Arrays.asList(words.split("['\\s]"));
 
-            for (String word : wordlist) {
+            for (String word : wordlist){
                 wordCounter++;
-                if (word.length() < MIN_WORD_LENGTH)
-                { shortWords.add(word);
-                } else longWords.add(word); } }
+                if (word.length() < MIN_WORD_LENGTH) {
+                    shortWords.add(word);
+                }else longWords.add(word); } }
 
         System.out.println("Words in song : " + wordCounter);
         System.out.println("Short words in song is " + shortWords.size()); }
@@ -41,10 +41,9 @@ public class CountingWords {
     public void countUniqueWords() {
         Map<String, Integer> uniquewords = new TreeMap<>();
 
-        for (String uwords : longWords)
-        {
-            if (uniquewords.containsKey(uwords))
-            {   uniquewords.put(uwords, uniquewords.get(uwords) + 1);
+        for (String uwords : longWords) {
+            if (uniquewords.containsKey(uwords)) {
+                uniquewords.put(uwords, uniquewords.get(uwords) + 1);
             }else uniquewords.put(uwords, 1);
         }
         ArrayList list = new ArrayList(sortedSet(uniquewords));

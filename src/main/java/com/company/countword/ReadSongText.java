@@ -8,13 +8,11 @@ import java.util.List;
 public class ReadSongText {
     private List<String> song = new ArrayList<>();
     private String href = this.getClass().getClassLoader().getResource("data.txt").getFile();
-    public List<String> read()
-
-    {try (BufferedReader bufferedReader = new BufferedReader(new FileReader(href)))
-
-        {String str;
-            while ((str = bufferedReader.readLine()) != null)
-            { song.add(str);
+    public List<String> read() {
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(href))) {
+        String str;
+            while ((str = bufferedReader.readLine()) != null) {
+                song.add(str);
             }
         } catch (IOException e) { System.out.println(e.getMessage());
     }
