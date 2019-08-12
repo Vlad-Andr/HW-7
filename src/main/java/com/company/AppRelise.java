@@ -6,8 +6,4 @@ public class AppRelise {
         CountingWords countWord = new CountingWords();
         countWord.countWords();
         countWord.countCensorshipWords();
-        countWord.countUniqueWords();
-    }
-
-
-}
+        countWord.countUniqueWords();}}
