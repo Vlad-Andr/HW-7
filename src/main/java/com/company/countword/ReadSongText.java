@@ -14,7 +14,11 @@ public class ReadSongText {
 
         {String str;
             while ((str = bufferedReader.readLine()) != null)
-            { song.add(str); }
-        } catch (IOException e) { System.out.println(e.getMessage()); }
-        return song;}
+            { song.add(str);
+            }
+        } catch (IOException e)
+    { System.out.println(e.getMessage());
+    }
+        return song;
+    }
 }

@@ -4,7 +4,10 @@ import java.util.List;
 
 public class BadWord {
     static List<String> badWords = new ArrayList();
-    static {
+    static
+    {
         badWords.add("shit");
         badWords.add("whore");
-        badWords.add("fuck"); }}
+        badWords.add("fuck");
+    }
+}
