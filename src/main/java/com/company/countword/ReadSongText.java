@@ -16,8 +16,7 @@ public class ReadSongText {
             while ((str = bufferedReader.readLine()) != null)
             { song.add(str);
             }
-        } catch (IOException e)
-    { System.out.println(e.getMessage());
+        } catch (IOException e) { System.out.println(e.getMessage());
     }
         return song;
     }
